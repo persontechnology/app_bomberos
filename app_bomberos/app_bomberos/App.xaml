@@ -6,6 +6,9 @@
              mc:Ignorable="d"
              x:Class="app_bomberos.App">
     <Application.Resources>
-
+        <Style TargetType="NavigationPage">
+            <Setter Property="BarBackgroundColor" Value="Red"></Setter>
+            <Setter Property="BarTextColor" Value="White"></Setter>
+        </Style>
     </Application.Resources>
 </Application>

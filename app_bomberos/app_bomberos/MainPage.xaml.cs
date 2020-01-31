@@ -1,4 +1,5 @@
-﻿using System;
+﻿using app_bomberos.vistas;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -16,6 +17,20 @@ namespace app_bomberos
         public MainPage()
         {
             InitializeComponent();
+            inciarAnimacion();
+        }
+
+        private async void inciarAnimacion()
+        {
+            await Task.Delay(200);
+            await btnIniciar.FadeTo(0, 250);
+            await Task.Delay(200);
+            await btnIniciar.FadeTo(1, 250);
+        }
+
+       async private void Iniciar(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Login());
         }
     }
 }

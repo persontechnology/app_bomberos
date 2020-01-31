@@ -4,13 +4,29 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
+             xmlns:local="clr-namespace:app_bomberos"
+             BackgroundImageSource="{local:ImageResource app_bomberos.img.bombero.jpg }"
+             Title="Cuerpo de Bomberos de Latacunga"
              x:Class="app_bomberos.MainPage">
 
     <StackLayout>
         <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <Button x:Name="btnIniciar"
+            Text="Iniciar"
+                Clicked="Iniciar"
+            BorderColor="Red"
+            Padding="5"
+            BorderWidth="2"
+            WidthRequest      ="120"
+            HeightRequest     ="45"
+            CornerRadius      ="30"
+            VerticalOptions   ="EndAndExpand"
+            HorizontalOptions ="CenterAndExpand"
+            BackgroundColor   ="White">
+            
+        </Button>
+        <Label Text="www.api-bomberoslatacunga.com" TextColor="White" FontSize="Micro" FontAttributes="Bold" HorizontalOptions="Center" ></Label>
+        
     </StackLayout>
 
 </ContentPage>

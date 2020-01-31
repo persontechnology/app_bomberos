@@ -1,4 +1,6 @@
-﻿using System;
+﻿using app_bomberos.Helpers;
+using app_bomberos.vistas;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,7 +12,14 @@ namespace app_bomberos
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            if (Settings.IsLoggedIn == true)
+            {
+                MainPage = new NavigationPage(new Inicio());
+            }
+            else
+            {
+                MainPage = new NavigationPage(new MainPage());
+            }
         }
 
         protected override void OnStart()
