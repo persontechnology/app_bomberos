@@ -10,7 +10,7 @@ namespace app_bomberos
 {
     public class ResFull
     {
-        public const string urlbase = "http://192.168.1.6:8000/";
+        public const string urlbase = "https://api-bomberoslatacunga.com/";
         public async Task<T> Get<T>(string url)
         {
             try

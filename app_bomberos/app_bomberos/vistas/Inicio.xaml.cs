@@ -18,14 +18,14 @@ namespace app_bomberos.vistas
             InitializeComponent();
         }
 
-        private void ListaEmergencia(object sender, EventArgs e)
+         async private void ListaEmergencia(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new ReporteLista());
         }
 
-        private void EmergenciasHoy(object sender, EventArgs e)
+       async private void EmergenciasHoy(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new ReporteHoy());
         }
 
        async private void Salir(object sender, EventArgs e)

@@ -37,7 +37,7 @@
                 </Grid>
 
                 <Button Text="Salir" BackgroundColor="Red" Clicked="Salir" TextColor="White" BorderColor="Black" BorderWidth="1"></Button>
-                <Label Text="© 2020 The Spartans Gym" HorizontalOptions="Center" FontSize="Small"></Label>
+                <Label Text="CUERPO DE BOMBEROS LATACUNGA" HorizontalOptions="Center" FontSize="Small"></Label>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
